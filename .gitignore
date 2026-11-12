@@ -70,3 +70,6 @@ Assets/Resources/PerformanceTestRunInfo**
 **/Recordings/*
 UserSettings/**
 .vs/*
+
+# Codely CLI local state
+.codely-cli/
