@@ -135,12 +135,12 @@ namespace Unity.Entities.Racing.Gameplay
                 return;
             }
 
-            var currentScale = (Vector2) m_SpeakerSignal.transform.scale;
+            var currentScale = (Vector2) m_SpeakerSignal.resolvedStyle.scale.value;
             var nextScale = new Vector2(1, m_Random.NextFloat(m_MinMaxScaleIndicatorSpeaker.x, m_MinMaxScaleIndicatorSpeaker.y));
             m_SpeakerSignal.style.opacity = 1;
             m_SpeakerSignal.experimental.animation.Start(currentScale, nextScale, 100, (element, value) =>
             {
-                element.transform.scale = value;
+                element.style.scale = new StyleScale(value);
             }).OnCompleted(AnimateIcon);
         }
     }

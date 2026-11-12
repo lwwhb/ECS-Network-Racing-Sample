@@ -176,8 +176,8 @@ namespace Unity.Entities.Racing.Gameplay
 
             m_MainCenterLabel.text = m_CounterTextValue[index];
             m_MainCenterLabel.style.opacity = 1;
-            m_MainCenterLabel.transform.scale = Vector3.one;
-            m_MainCenterLabel.transform.position = Vector3.zero;
+            m_MainCenterLabel.style.scale = new StyleScale(Vector2.one);
+            m_MainCenterLabel.style.translate = new StyleTranslate(new Translate(0f, 0f));
             m_MainCenterLabel.experimental.animation.Position(new Vector3(0, -50f), 1000).Ease(Easing.OutCubic);
             m_MainCenterLabel.experimental.animation.Scale(1.5f, 1000).Ease(Easing.OutCubic);
             m_MainCenterLabel.experimental.animation.Start(new StyleValues { opacity = 0f }, 1000);
@@ -233,8 +233,8 @@ namespace Unity.Entities.Racing.Gameplay
             m_MainCenterLabel.style.display = DisplayStyle.Flex;
             m_MainCenterLabel.text = "FINISH";
             m_MainCenterLabel.style.opacity = 1;
-            m_MainCenterLabel.transform.scale = Vector3.one;
-            m_MainCenterLabel.transform.position = Vector3.zero;
+            m_MainCenterLabel.style.scale = new StyleScale(Vector2.one);
+            m_MainCenterLabel.style.translate = new StyleTranslate(new Translate(0f, 0f));
             m_RaceInfoPanel.experimental.animation.Start(new StyleValues { opacity = 0f }, 500).Ease(Easing.InCubic);
             yield return new WaitForSeconds(2f);
             m_MainCenterLabel.text = $"{GetOrdinal(rank)} PLACE";
