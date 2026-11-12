@@ -73,3 +73,9 @@ UserSettings/**
 
 # Codely CLI local state
 .codely-cli/
+
+# Unity generated: Entities scene dependency cache
+/Assets/SceneDependencyCache/
+
+# Codely context ignore list (local tool config)
+.codelyignore
