@@ -4,6 +4,8 @@
 MultiplayerManager:
   m_ObjectHideFlags: 0
   m_EnableMultiplayerRoles: 1
+  m_EnablePlayModeLocalDeployment: 0
+  m_EnablePlayModeRemoteDeployment: 0
   m_StrippingTypes:
     1: []
     2:
@@ -36,11 +38,12 @@ MultiplayerManager:
     - UnityEngine.UI:UnityEngine.UI:ToggleGroup
     - UnityEngine.ParticleSystemModule:UnityEngine:ParticleSystemRenderer
     - UnityEngine.CoreModule:UnityEngine:MeshRenderer
-    - UnityEngine.CoreModule:UnityEngine:Camera
+    - UnityEngine.RenderAs2DModule:UnityEngine:RenderAs2D
     - UnityEngine.SpriteMaskModule:UnityEngine:SpriteMask
     - UnityEngine.CoreModule:UnityEngine:SpriteRenderer
     - UnityEngine.TilemapModule:UnityEngine.Tilemaps:TilemapRenderer
     - UnityEngine.UI:UnityEngine.UI:AspectRatioFitter
+    - UnityEngine.CoreModule:UnityEngine:Camera
     - UnityEngine.UIElementsModule:UnityEngine.UIElements:UIRenderer
     - UnityEngine.AudioModule:UnityEngine:AudioEchoFilter
     - UnityEngine.UI:UnityEngine.EventSystems:PhysicsRaycaster
